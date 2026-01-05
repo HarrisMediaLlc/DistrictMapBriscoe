@@ -1,30 +1,30 @@
 /* container popup */
-.leaflet-popup.district-popup .leaflet-popup-content-wrapper {
-  background: #B22234;
-  color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,.25);
+#map-district .leaflet-popup.district-popup .leaflet-popup-content-wrapper {
+  background: #B22234 !important;
+  color: #ffffff !important;
+  border-radius: 12px !important;
+  box-shadow: 0 10px 25px rgba(0,0,0,.25) !important;
 }
 
 /* text popup */
-.leaflet-popup.district-popup .leaflet-popup-content {
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 1.4;
+#map-district .leaflet-popup.district-popup .leaflet-popup-content {
+  color: #ffffff !important;
+  font-size: 14px !important;
+  line-height: 1.4 !important;
 }
 
 /* arrow popup */
-.leaflet-popup.district-popup .leaflet-popup-tip {
-  background: #B22234;
+#map-district .leaflet-popup.district-popup .leaflet-popup-tip {
+  background: #B22234 !important;
 }
 
 
 /* close button */
-.leaflet-popup.district-popup .leaflet-popup-close-button {
-  color: #ffffff;
-  opacity: 0.9;
+#map-district .leaflet-popup.district-popup .leaflet-popup-close-button {
+  color: #ffffff !important;
+  opacity: 0.9 !important;
 }
 
-.leaflet-popup.district-popup .leaflet-popup-close-button:hover {
-  opacity: 1;
+#map-district .leaflet-popup.district-popup .leaflet-popup-close-button:hover {
+  opacity: 1 !important;
 }
