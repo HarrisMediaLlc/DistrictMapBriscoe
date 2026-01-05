@@ -4,6 +4,8 @@
   color: #ffffff !important;
   border-radius: 12px !important;
   box-shadow: 0 10px 25px rgba(0,0,0,.25) !important;
+  width: 220px;
+  padding: 10px 16px !important;
 }
 
 /* text popup */
@@ -28,3 +30,4 @@
 #map-district .leaflet-popup.district-popup .leaflet-popup-close-button:hover {
   opacity: 1 !important;
 }
+
