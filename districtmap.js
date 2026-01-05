@@ -1,10 +1,3 @@
-if (!window.L) {
-    const script = document.createElement('script');
-    script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
-    script.defer = true;
-    document.head.appendChild(script);
-}
-
 // ====== CONFIG ======
 const CENTER = [29.674024, -95.289082];
 const START_ZOOM = 10;
@@ -41,3 +34,4 @@ district.bindPopup(
 
 
 map.fitBounds(district.getBounds(), { padding: [20, 20] });
+
