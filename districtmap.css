@@ -1,0 +1,30 @@
+/* container popup */
+.leaflet-popup.district-popup .leaflet-popup-content-wrapper {
+  background: #B22234;
+  color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.25);
+}
+
+/* text popup */
+.leaflet-popup.district-popup .leaflet-popup-content {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* arrow popup */
+.leaflet-popup.district-popup .leaflet-popup-tip {
+  background: #B22234;
+}
+
+
+/* close button */
+.leaflet-popup.district-popup .leaflet-popup-close-button {
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.leaflet-popup.district-popup .leaflet-popup-close-button:hover {
+  opacity: 1;
+}
