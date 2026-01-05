@@ -16,14 +16,14 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 }).addTo(map);
 
 // ====== CREATING OLYGON ======
-const district = L.polygon(DISTRICT_COORDS, {
+const mapDistrict = L.polygon(DISTRICT_COORDS, {
     color: RED,
     weight: 3,
     opacity: 1,
     fillColor: RED,
     fillOpacity: 0.25,
     interactive: true,
-}).addTo(map);
+}).addTo(mapDistrict);
 
 district.bindPopup(
     "<strong>Texas' 9th Congressional District</strong><br>",
@@ -34,4 +34,5 @@ district.bindPopup(
 
 
 map.fitBounds(district.getBounds(), { padding: [20, 20] });
+
 
