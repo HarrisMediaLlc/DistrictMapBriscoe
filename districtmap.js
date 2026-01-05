@@ -13,7 +13,7 @@ const map = L.map("map-district",).setView(CENTER, START_ZOOM);
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 19,
     attribution: "&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors",
-}).addTo(map);
+}).addTo(mapDistrict);
 
 // ====== CREATING OLYGON ======
 const mapDistrict = L.polygon(DISTRICT_COORDS, {
@@ -34,5 +34,6 @@ district.bindPopup(
 
 
 map.fitBounds(district.getBounds(), { padding: [20, 20] });
+
 
 
