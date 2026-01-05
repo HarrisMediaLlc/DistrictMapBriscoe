@@ -8,7 +8,7 @@ const DISTRICT_COORDS = JSON.parse("[[29.674024,-95.289082],[29.674078,-95.28891
 const RED = "#B22234";
 
 // ====== MAP INIT ======
-const map = L.map("map-district",).setView(CENTER, START_ZOOM);
+const mapDistrict = L.map("map-district",).setView(CENTER, START_ZOOM);
 
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 19,
@@ -16,7 +16,7 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 }).addTo(mapDistrict);
 
 // ====== CREATING OLYGON ======
-const mapDistrict = L.polygon(DISTRICT_COORDS, {
+const district = L.polygon(DISTRICT_COORDS, {
     color: RED,
     weight: 3,
     opacity: 1,
@@ -33,7 +33,8 @@ district.bindPopup(
 );
 
 
-map.fitBounds(district.getBounds(), { padding: [20, 20] });
+mapDistrict.fitBounds(district.getBounds(), { padding: [20, 20] });
+
 
 
 
